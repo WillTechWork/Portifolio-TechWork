@@ -114,8 +114,6 @@ html {
     font-size: 75px;
     font-weight: 500;
     margin-left: -3px;
-    animation: slideBottom 1s ease forwards;
-    animation-delay: .7s;
 }
 
 .home .home-content .text-3 {
