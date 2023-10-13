@@ -7,6 +7,10 @@
     text-decoration: none;
 }
 
+img {
+    max-width: 450px;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -56,7 +60,7 @@ html {
 }
 
 .navbar .logo a span {
-    color: yellow;
+    color: #fff;
     transition: all 0.3s ease;
 }
 
@@ -103,12 +107,15 @@ html {
 
 .home .home-content .text-1 {
     font-size: 27px;
+
 }
 
 .home .home-content .text-2 {
     font-size: 75px;
     font-weight: 500;
     margin-left: -3px;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .7s;
 }
 
 .home .home-content .text-3 {
@@ -117,7 +124,7 @@ html {
 }
 
 .home .home-content .text-3 span {
-    color: yellow;
+    color: limegreen;
     font-weight: 500;
 }
 
@@ -133,7 +140,7 @@ html {
 }
 
 .home .home-content a:hover {
-    color: greenyellow;
+    color: yellow;
     background: none;
 }
 
@@ -257,7 +264,7 @@ footer {
 
 .about .about-content .right a {
     display: inline-block;
-    background: yellow;
+    background: blue;
     color: #fff;
     font-size: 20px;
     font-weight: 500;
@@ -302,7 +309,7 @@ footer {
 
 .skills .skills-content .left a {
     display: inline-block;
-    background: yellow;
+    background: blue;
     color: #fff;
     font-size: 18px;
     font-weight: 500;
@@ -346,7 +353,7 @@ footer {
     height: 100%;
     top: 0;
     left: 0;
-    background: yellow;
+    background: red;
 }
 
 .skills .skills-content .right .html::before {
@@ -416,7 +423,7 @@ footer {
 
 .contact .contact-content .row ion-icon {
     font-size: 25px;
-    color: yellow;
+    color: blue;
 }
 
 .contact .rigth form .fields {
@@ -469,7 +476,7 @@ footer {
     width: 100%;
     height: 100%;
     border: 2px solid yellow;
-    background: yellow;
+    background: blue;
     color: #fff;
     font-size: 20px;
     font-weight: 500;
