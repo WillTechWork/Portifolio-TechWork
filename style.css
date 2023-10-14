@@ -7,10 +7,6 @@
     text-decoration: none;
 }
 
-img {
-    max-width: 450px;
-}
-
 html {
     scroll-behavior: smooth;
 }
@@ -62,6 +58,14 @@ html {
 .navbar .logo a span {
     color: #fff;
     transition: all 0.3s ease;
+    position: relative;
+}
+
+.navbar .logo a::after {
+    content: "";
+    width: 100%;
+    height: 4px;
+    background-color: #111;
 }
 
 .navbar.sticky .logo a span {
@@ -138,7 +142,7 @@ html {
 }
 
 .home .home-content a:hover {
-    color: yellow;
+    color: limegreen;
     background: none;
 }
 
@@ -176,7 +180,7 @@ html {
 
 }
 
-/*  todos os codigos similares  */
+/*  Efeito de posição de conteúdo, fonte de escrita e coloração  */
 section {
     padding: 100px 0;
 }
@@ -208,7 +212,7 @@ section .title::after {
     left: 50%;
     font-size: 20px;
     background: #fff;
-    color: yellow;
+    color: blue;
     padding: 5px;
     transform: translateX(-50%);
 }
@@ -232,7 +236,7 @@ footer {
     justify-content: space-between;
 }
 
-/*  sessão sobre  */
+/*  Parte sobre mim estilização  */
 
 .about .title::after {
     content: "Quem sou eu";
@@ -253,7 +257,7 @@ footer {
 }
 
 .about .about-content .right .text span {
-    color: yellow;
+    color: limegreen;
 }
 
 .about .about-content .right p {
@@ -274,18 +278,35 @@ footer {
 }
 
 .about .about-content .right a:hover {
-    color: yellow;
+    color: limegreen;
     background: none;
 }
 
+
+/* Imagem de Perfil com animação: Efeito flutuante */
 .about .about-content .left img {
     width: 400px;
     height: 400px;
     object-fit: cover;
-    border-radius: 6px;
+    border-radius: 95%;
+    opacity: 95%;
+    animation: float 3s ease-in-out infinite;
+
+}
+/* Efeito fantasma flutuando */
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-50px);
+    }
 }
 
-/*  sessão especialidades  */
+/*  Estrutura de especialidades  */
 
 .skills .title::after {
     content: "Que faço";
@@ -319,7 +340,7 @@ footer {
 }
 
 .skills .skills-content .left a:hover {
-    color: yellow;
+    color: limegreen;
     background: none;
 }
 
@@ -374,7 +395,7 @@ footer {
     width: 42%;
 }
 
-/*  sessão Contato  */
+/*  Estrutura de Contato  */
 .contact .title::after {
     content: "Fale conosco";
 }
@@ -421,7 +442,7 @@ footer {
 
 .contact .contact-content .row ion-icon {
     font-size: 25px;
-    color: blue;
+    color: red;
 }
 
 .contact .rigth form .fields {
@@ -484,11 +505,11 @@ footer {
 }
 
 .contact .rigth form .button button:hover {
-    color: yellow;
+    color: limegreen;
     background: none;
 }
 
-/*  sessão footer  */
+/*  Rodapé  */
 footer {
     background: #111;
     padding: 20px 23px;
@@ -506,7 +527,7 @@ footer span a:hover {
 }
 
 
-/*  responsivo  */
+/* Efeito de  responsividade */
 
 @media (max-width: 1300px) {
     .navbar .max-width {
